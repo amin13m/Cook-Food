@@ -1,0 +1,30 @@
+.navbar{
+    background-color: #52087c;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.navbar nav{
+    display: flex;
+    align-items: center;
+    max-width: 12000px;
+    
+}
+
+.navbar a.brand{
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    margin-right: auto;
+}
+
+.navbar a.cr{
+    text-decoration: none;
+    color: white;
+    font-size: small;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 8px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
