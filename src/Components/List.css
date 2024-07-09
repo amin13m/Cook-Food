@@ -1,0 +1,51 @@
+.list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.list .card{
+    background: rgb(120, 247, 94);
+    color: rgb(60, 0, 77);
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 4px 4px 3px rgb(37, 0, 71);
+    transition: all 0.3 ease;
+    position: relative;
+
+}
+
+.list .card:hover{
+    transform: rotate(3deg);
+    color: #000200;
+    box-shadow: 5px 3px 3px rgb(37, 0, 71);
+}
+
+.card h2{
+    color: rgb(126, 0, 0);
+}
+
+.card h2:hover{
+    color: rgb(228, 0, 114);
+}
+
+.list .card div{
+    font-size: 0.7em;
+    margin: 20px 0px;
+    line-height:  1.5em;
+
+}
+
+.card a{
+    text-decoration: none;
+    color: #d3d3d3;
+    background-color:rgb(122, 48, 190) ;
+    padding: 2px ;
+    border-radius: 2px;
+    margin: 20px auto 0px;
+    font-size: 0.9em;
+    box-shadow: 2px 2px 2px rgb(48, 11, 83);
+    border: 2px solid rgb(110, 6, 196);
+}
