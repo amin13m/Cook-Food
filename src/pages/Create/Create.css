@@ -1,0 +1,63 @@
+.create{
+    display: grid;
+    grid-template-columns: 1fr  ;
+    grid-gap: 30px;
+    max-width: 1200;
+    background-color: rgb(173, 252, 157);
+    margin: 30px;
+    padding: 20px;
+    border: 3px solid rgb(56, 0, 94);
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.create form{
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-gap: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+input{
+    border-radius: 5px;
+    height: 30px;
+    width: 300px;
+}
+
+textarea{
+    border-radius: 5px;
+    height: 30px;
+    width: 300px;
+}
+
+
+.btn{
+    padding: 3px;
+    width: 60px;
+    background-color: rgb(227, 121, 253);
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+h2{
+    color: rgb(0, 122, 10);
+}
+.itms{
+    font-size: small;
+    color: rgb(35, 35, 36);
+}
+
+
+input.Add{
+    width: 230px;
+    margin-right: 10px;
+}
+
+
+label{
+    align-items: center;
+}
