@@ -3,10 +3,10 @@
     grid-template-columns: 1fr 3fr;
     grid-gap: 30px;
     max-width: 1200;
-    background-color: rgb(173, 252, 157);
+    background-color: rgb(253, 253, 253);
     margin: 30px;
     padding: 20px;
-    border: 3px solid  rgb(39, 102, 26);
+    border: 3px solid  rgb(151, 151, 151);
     border-radius: 20px;
 
 }
@@ -15,15 +15,16 @@
     font: italic;
     color: rgb(63, 1, 53);
     padding: 10px;
-   
+    background-color: rgb(224, 221, 221);
+    border-radius: 10px 50px/ 40px;
     border-style: outset;
-    border-color: rgb(88, 196, 62);
+    border-color: rgb(173, 173, 173);
 }
 
 ul{
-    background: rgb(132, 243, 104);
+    background: rgb(228, 226, 226);
     border-radius: 8px;
-    border: 2px solid rgb(99, 145, 89);
+    border: 2px solid rgb(166, 167, 166);
     margin: 20px;
 
 }
@@ -37,3 +38,17 @@ li{
     font-size: large;
     margin: 10px;
 }
+
+
+
+.recipe.dark{
+    background-color: #444;
+   }
+   
+   .recipe.dark p ,
+   .recipe.dark h2,
+   .recipe.dark span{
+       color: #fafafa;
+   }
+
+ 

@@ -7,7 +7,7 @@
 }
 
 .list .card{
-    background: rgb(120, 247, 94);
+    background: rgb(240, 240, 240);
     color: rgb(60, 0, 77);
     padding: 20px;
     border-radius: 6px;
@@ -40,12 +40,22 @@
 
 .card a{
     text-decoration: none;
-    color: #d3d3d3;
-    background-color:rgb(122, 48, 190) ;
+    color: #333333;
+    background-color:rgb(194, 194, 194) ;
     padding: 2px ;
     border-radius: 2px;
     margin: 20px auto 0px;
     font-size: 0.9em;
-    box-shadow: 2px 2px 2px rgb(48, 11, 83);
-    border: 2px solid rgb(110, 6, 196);
+    box-shadow: 2px 2px 2px rgb(0, 0, 0);
+    border: 2px solid rgb(211, 208, 208);
+}
+
+.card.dark{
+    background-color: #444;
+}
+
+.card.dark p,
+.card.dark h2,
+.card.dark div{
+    color: #fafafa;
 }

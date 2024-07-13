@@ -2,6 +2,7 @@ button {
   font-size: 1rem;
   width: 30px;
   border: 1px solid #d6d6d6;
+  background-color: rgb(158, 158, 158);
 }
 
 .App {
@@ -55,3 +56,9 @@ button {
   border-left: none;
   border-bottom: 0;
 }
+
+.App.dark{
+  min-height: 620px;
+  background-color: #222;
+}
+

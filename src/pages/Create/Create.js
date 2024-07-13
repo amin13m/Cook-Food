@@ -4,6 +4,7 @@ import { Routes, Route, useNavigate } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { useFetch } from '../../Hooks/usefetch'
 import "./Create.css"
+import { useTheme } from '../../Hooks/useTheme'
 
 export default function Create() {
 
@@ -38,10 +39,12 @@ export default function Create() {
             navigate('/')
         }
     },[data])
+
+    const {mode}= useTheme()
     
     return(
 
-        <div className='create'>
+        <div className={`create ${mode}`}>
             <h2>Add a new recipe</h2>
             
             <form onSubmit={handleSabmit}>

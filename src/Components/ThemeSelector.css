@@ -1,0 +1,44 @@
+
+.selectColor bottom{
+    display: inline-block; 
+    width: 20px;
+    height: 20px;
+    margin-left: 15px; 
+    border-radius: 50%;
+    margin-bottom: -5px;
+}
+
+.theme{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 1250px;
+    margin: 10px ;
+    cursor: pointer;
+  
+}
+
+.makeColor{
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    margin-left: 15px; 
+    border-radius: 50%;
+  
+
+}
+
+.toggleMode{
+    margin-right: auto;
+    margin-left: 60px;
+}
+
+.modeToggle img{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+
+
+
