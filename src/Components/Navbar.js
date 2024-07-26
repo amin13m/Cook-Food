@@ -14,7 +14,7 @@ export default function Navbar() {
         <div className='navbar' style={{backgroundColor:color}}>
             <nav>
                 
-                <Link to="/" className='brand'><h1> food </h1></Link>
+                <Link to="/" className='brand'><h1>Cook Food </h1></Link>
                 <Search/>
                 <Link to="/Create" className='cr'><h1> Create Recipe </h1></Link>
                 

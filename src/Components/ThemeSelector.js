@@ -18,14 +18,14 @@ export default function ThemeSelector() {
             <div className='toggleMode'>
                 <img
                 onClick={toggleMode}
-                src='modeIcon'
-                style={{filter : 'dark'===mode? 'invert(100%)':'invert(20%)'}}
+                src={modeIcon}
+                style={{filter : 'light'===mode? 'invert(100%)':'invert(20%)'}}
                 />
             </div>
             <div className='selectColor'>
                 { Colors.map((e)=>{
                     return(
-                    <bottom
+                    <button
                     style={{backgroundColor: e}}
                     key={e}
                     onClick={()=> changeColor(e)}
