@@ -7,6 +7,7 @@ import React, { useState } from 'react'
 import Recipe from '../pages/Recipe/Recipe'
 import { useTheme } from '../Hooks/useTheme'
 import { async } from 'q'
+import starIcon from '../assets/star.svg'
 
 import { deleteDoc , doc} from '@firebase/firestore'
 import { db } from '../firebase/config'
@@ -39,6 +40,15 @@ export default function List({data}) {
                   onClick={()=>handleClick(r.id)}
                   style={{filter : 'light'===mode? 'invert(100%)':'invert(20%)'}}
                 />
+
+                {r.mark && <img
+                  className='star'
+                  src={starIcon}
+                  style={{filter :'invert(80%)' ,
+                  background:"blue",
+                  left : "20px"
+                  }}
+                />}
               </div>
             ))}
         </div>

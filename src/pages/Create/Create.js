@@ -24,7 +24,7 @@ export default function Create() {
     const handleSubmit = async(e)=>{
         e.preventDefault()
         
-        const data= {title, ingredients, cookingTime : cookingTime + 'min' , recipe}
+        const data= {title, ingredients, cookingTime : cookingTime + 'min' , recipe , mark :false}
         try{      
             const ref =collection(db , 'recipe')
             await addDoc(ref , data)

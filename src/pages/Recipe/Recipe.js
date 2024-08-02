@@ -5,8 +5,12 @@ import "./Recipe.css"
 import { useTheme } from '../../Hooks/useTheme'
 import { useState } from 'react'
 import { useEffect } from 'react'
+import starIcon from '../../assets/star.svg'
+import { async } from 'q'
+
 import { db } from '../../firebase/config'
-import { getDoc , doc} from '@firebase/firestore'
+import { doc, updateDoc, onSnapshot} from '@firebase/firestore'
+
 
 
 export default function Recipe() {
@@ -22,18 +26,32 @@ export default function Recipe() {
         setLoading(true)
 
         const ref = doc(db , 'recipe' , id)
-        getDoc(ref)
-          .then((doc)=>{
-            if(doc.empty){
-                setErr("nothing found !!!")
-                setLoading(false)
-            }else{
-                setData(doc.data())
-                setLoading(false)
-            }
-          })
-    }, [])
 
+        const unsub = onSnapshot(ref, (snapshot)=>{
+                if(snapshot.empty){
+                    setErr("nothing found !!!")
+                    setLoading(false)
+                }else{
+                    setData(snapshot.data())
+                    setLoading(false)
+                }
+            
+
+            return()=> unsub()
+        })
+    }, [id])
+
+
+    const handleClick=async()=>{
+        try{
+            const ref = doc(db , "recipe" , id)
+            await updateDoc(ref , {
+                mark : data.mark===false? true : false
+            })
+        }catch(err){
+            console.log(err)
+        }
+    }
    
     return (
         <div className={`recipe ${mode}`}>
@@ -53,7 +71,19 @@ export default function Recipe() {
                 </ul>
                 <p>{data.recipe}</p>
                 
-                </>}
+                <img
+                  className='star'
+                  src={starIcon}
+                  style={{filter : true===data.mark? 'invert(80%)':'invert(60%)' ,
+                  background:"blue"
+                  }}
+                  onClick={()=>handleClick()}
+                />
+            </>}
+
+            
+  
+            
             
         </div>
     )

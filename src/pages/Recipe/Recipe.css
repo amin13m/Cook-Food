@@ -51,4 +51,10 @@ li{
        color: #fafafa;
    }
 
+
+.star{
+    position: absolute;
+    right: 50px;
+    border-radius: 50%;
+}
  
