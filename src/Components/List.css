@@ -23,6 +23,10 @@
     box-shadow: 5px 3px 3px rgb(37, 0, 71);
 }
 
+.list .card.dark:hover{
+    box-shadow: 5px 3px 3px rgba(255, 255, 255, 0.308);
+}
+
 .card h2{
     color: rgb(126, 0, 0);
 }
@@ -52,6 +56,7 @@
 
 .card.dark{
     background-color: #444;
+    box-shadow: 4px 4px 3px rgba(255, 255, 255, 0.308);
 }
 
 .card.dark p,

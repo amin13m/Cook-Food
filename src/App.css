@@ -1,3 +1,9 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 button {
   font-size: 1rem;
   width: 30px;
@@ -57,8 +63,14 @@ button {
   border-bottom: 0;
 }
 
+html, body,div#root{
+  height: 100%;
+}
+
+
 .App.dark{
-  min-height: 620px;
-  background-color: #222;
+  background-color: #222; 
+  min-height: 100%;
+  display: flex;
 }
 

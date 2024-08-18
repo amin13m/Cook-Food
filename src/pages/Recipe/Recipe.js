@@ -26,6 +26,7 @@ export default function Recipe() {
         setLoading(true)
 
         const ref = doc(db , 'recipe' , id)
+        const refs = doc(db , 'recipe' , id)
 
         const unsub = onSnapshot(ref, (snapshot)=>{
                 if(snapshot.empty){
